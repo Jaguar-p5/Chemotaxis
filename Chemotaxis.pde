@@ -32,10 +32,11 @@ class Fox extends Prey {
 
  float pheta = 0 ; // pheta should be proper to what it looks like on the screen, behaves as written. pheta must be accurate.
  float close = 0; 
+ int tracking;
   Fox(){
     myX = 250;
     myY = 450;
-    myCol = color(255, 99, 11);
+    myCol = color(255, 111, 11);
     close = 0;
   }
   
@@ -63,10 +64,10 @@ class Fox extends Prey {
   }
   if(xDif < 0 && -yDif > 0)
     newtheta += PI;
-
+  
   pheta = newtheta;
   A.setPheta(newtheta);
-  
+  System.out.println(pheta);
   }
   }  
   
