@@ -66,7 +66,7 @@ class Fox extends Prey {
 
   pheta = newtheta;
   A.setPheta(newtheta);
-  System.out.println(pheta);
+  
   }
   }  
   
